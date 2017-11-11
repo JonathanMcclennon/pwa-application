@@ -1,0 +1,66 @@
+{
+    "body": [
+        {
+            "name": "Brock Lesnar v A.J. Styles",
+            "type": "One v One. One fall match",
+            "participants": [
+                {
+                    "name": "Brock Lesnar",
+                    "title": "Universal Champion"
+                },
+                {
+                    "name": "A.J. Styles",
+                    "title": "WWE Champion"
+                }
+            ]
+        },
+        {
+            "name": "Team Raw v Team Smackdown",
+            "type": "Traditional Surviour Series match",
+            "participants": [
+                {
+                    "team": true,
+                    "name": "Team Raw",
+                    "members": [
+                        {
+                            "name": "Kurt Angle"
+                        },
+                        {
+                            "name": "Braun Strowman"
+                        },
+                        {
+                            "name": "Finn Balor"
+                        },
+                        {
+                            "name": "Samoa Joe"
+                        },
+                        {
+                            "name": "Jason Jordan"
+                        }
+                    ]
+                },
+                {
+                    "team": true,
+                    "name": "Team Smackdown",
+                    "members": [
+                        {
+                            "name": "Shane Mcmanhon"
+                        },
+                        {
+                            "name": "Randy Orton"
+                        },
+                        {
+                            "name": "Shinsuke Nakamura"
+                        },
+                        {
+                            "name": "Bobby Roode"
+                        },
+                        {
+                            "name": "John Cena"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
