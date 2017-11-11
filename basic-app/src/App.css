@@ -1,0 +1,32 @@
+._title {
+  font-size: 24px;
+}
+
+.ppv__event {
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  border: solid 1px black;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__match {
+  display: flex;
+}
+
+.card__wrestler {
+  margin: 12px;
+  text-align: center;
+}
+
+.card__wrestler-img {
+  height: 80%;
+  width: 60%;
+}
+
+.card__wrestler-name {
+
+}
