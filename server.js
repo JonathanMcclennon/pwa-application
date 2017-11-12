@@ -1,6 +1,11 @@
 const express = require('express')
 const app = express()
 
+app.use('/', function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    next();
+});
+
 app.use(express.static('public'))
 
 app.get('/api/ppvs', (req, res) => {
@@ -13,7 +18,7 @@ app.get('/api/ppvs/:id', (req, res) => {
     const id = req.params.id;
     try {
         ppvJson = require(`./responses/ppvs/${id}.json`);
-    } catch(e) {
+    } catch (e) {
         console.info(e);
         return res.status(404).end()
     }
