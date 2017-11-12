@@ -6,11 +6,17 @@
             "participants": [
                 {
                     "name": "Brock Lesnar",
-                    "title": "Universal Champion"
+                    "title": "Universal Champion",
+                    "media": {
+                        "image": "//localhost:3001/images/brocklesnar.png"
+                    }
                 },
                 {
                     "name": "A.J. Styles",
-                    "title": "WWE Champion"
+                    "title": "WWE Champion",
+                    "media": {
+                        "image": "//localhost:3001/images/ajstyles.png"
+                    }
                 }
             ]
         },
@@ -23,19 +29,34 @@
                     "name": "Team Raw",
                     "members": [
                         {
-                            "name": "Kurt Angle"
+                            "name": "Kurt Angle",
+                            "media": {
+                                "image": "//localhost:3001/images/kurtangle.png"
+                            }
                         },
                         {
-                            "name": "Braun Strowman"
+                            "name": "Braun Strowman",
+                            "media": {
+                                "image": "//localhost:3001/images/braunstrowman.png"
+                            }
                         },
                         {
-                            "name": "Finn Balor"
+                            "name": "Finn Balor",
+                            "media": {
+                                "image": "//localhost:3001/images/finnbalor.png"
+                            }
                         },
                         {
-                            "name": "Samoa Joe"
+                            "name": "Samoa Joe",
+                            "media": {
+                                "image": "//localhost:3001/images/samoajoe.png"
+                            }
                         },
                         {
-                            "name": "Jason Jordan"
+                            "name": "Jason Jordan",
+                            "media": {
+                                "image": "//localhost:3001/images/jasonjordan.png"
+                            }
                         }
                     ]
                 },
@@ -44,19 +65,34 @@
                     "name": "Team Smackdown",
                     "members": [
                         {
-                            "name": "Shane Mcmanhon"
+                            "name": "Shane Mcmahon",
+                            "media": {
+                                "image": "//localhost:3001/images/shanemcmahon.png"
+                            }
                         },
                         {
-                            "name": "Randy Orton"
+                            "name": "Randy Orton",
+                            "media": {
+                                "image": "//localhost:3001/images/randyorton.png"
+                            }
                         },
                         {
-                            "name": "Shinsuke Nakamura"
+                            "name": "Shinsuke Nakamura",
+                            "media": {
+                                "image": "//localhost:3001/images/shinsukenakamura.png"
+                            }
                         },
                         {
-                            "name": "Bobby Roode"
+                            "name": "Bobby Roode",
+                            "media": {
+                                "image": "//localhost:3001/images/bobbyroode.png"
+                            }
                         },
                         {
-                            "name": "John Cena"
+                            "name": "John Cena",
+                            "media": {
+                                "image": "//localhost:3001/images/johncena.png"
+                            }
                         }
                     ]
                 }
