@@ -1,6 +1,7 @@
 {
     "body": [
         {
+            "id": "surviour-series-1",
             "name": "Brock Lesnar v A.J. Styles",
             "type": "One v One. One fall match",
             "participants": [
@@ -21,8 +22,10 @@
             ]
         },
         {
+            "id": "surviour-series-2",
             "name": "Team Raw v Team Smackdown",
             "type": "Traditional Surviour Series match",
+            "isTeamMatch": true,
             "participants": [
                 {
                     "team": true,
@@ -53,9 +56,9 @@
                             }
                         },
                         {
-                            "name": "Jason Jordan",
+                            "name": "Triple H",
                             "media": {
-                                "image": "//localhost:3001/images/jasonjordan.png"
+                                "image": "//localhost:3001/images/tripleh.png"
                             }
                         }
                     ]

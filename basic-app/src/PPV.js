@@ -1,26 +1,35 @@
 import React, { Component } from 'react';
-import brocklesnar from './imgs/brocklesnar.png';
-import ajstyles from './imgs/ajstyles.png';
+import axios from 'axios';
+import Match from './Match';
 class PPV extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoading: true
+    }
+  }
+
+  async componentDidMount() {
+    const { match } = this.props;
+    const ppvcard = await axios(`//localhost:3001/api/ppvs/${match.params.id}`);
+    this.setState({ ppvcard: ppvcard.data.body, isLoading: false})
+  }
+
   render() {
+    if(this.state.isLoading) {
+      return <div>Fetching card</div>
+    }
+
+    const matches = this.state.ppvcard.map((match) => {
+      return <Match key={match.id} {...match} /> 
+    })
+
     return (
       <section>
         <h1 className="_title">Surviour Series</h1>
-        <h2>Updated Card</h2>
         <ul className="card">
-          <li>
-            <h3>Brock Lesnar v A.J. Styles</h3>
-            <section className="card__match">
-              <div className="card__wrestler">
-                <img className="card__wrestler-img" src={brocklesnar} />
-                <p className="card__wrestler-info">Brock Lesnar</p>
-              </div>
-              <div className="card__wrestler">
-                <img className="card__wrestler-img" src={ajstyles} />
-                <p className="card__wrestler-info">A.J. Styles</p>
-              </div>
-            </section>
-          </li>
+          { matches }
         </ul>
       </section>
     )

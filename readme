@@ -1,0 +1,10 @@
+A play around project to see the effects of a PWA on an application.
+
+To do
+
+[x] React app for baseline
+[x] Api's and server
+[x] Basic react components with router
+[ ] Serve application and get baseline metrics
+[ ] Duplicate basic react app
+[ ] Follow PRPL pattern on new application
