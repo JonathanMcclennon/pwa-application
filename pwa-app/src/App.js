@@ -3,10 +3,14 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
-import Home from './Home';
-import PayPerView from './PPV';
+import asyncComponent from './Asyncomp';
+
 import './reset.css';
 import './App.css';
+
+import Home from './Home'
+const PayPerView = asyncComponent(() => import('./PPV'));
+
 
 class App extends Component {
   render() {

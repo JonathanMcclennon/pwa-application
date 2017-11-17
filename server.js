@@ -37,9 +37,10 @@ app.get('/api/ppvs/:id', (req, res) => {
 
 app.get('/pwa-app', (req, res) => {
     if (process.env.HTTP2) {
-    const js = fs.readFileSync(__dirname + '/pwa-app/build/static/js/main.5b626f24.js')
+    const filename = '9ccd6684';
+    const js = fs.readFileSync(__dirname + '/pwa-app/build/static/js/main.'+filename+'.js')
     const css = fs.readFileSync(__dirname + '/pwa-app/build/static/css/main.58e36bd4.css');
-    var stream = res.push('/static/js/main.5b626f24.js', {
+    var stream = res.push('/static/js/main.'+filename+'.js', {
         status: 200, // optional 
         method: 'GET', // optional 
         request: {
