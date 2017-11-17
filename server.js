@@ -7,6 +7,7 @@ app.use('/', function (req, res, next) {
 });
 
 app.use(express.static('public'))
+app.use(express.static(__dirname + '/pwa-app/build'))
 
 app.get('/api/ppvs', (req, res) => {
     const ppvJson = require('./responses/ppvs.json');
@@ -24,5 +25,13 @@ app.get('/api/ppvs/:id', (req, res) => {
     }
     res.json(ppvJson)
 });
+
+app.get('/pwa-app', (req, res) => {
+    res.sendFile(__dirname + '/pwa-app/build/index.html')
+});
+
+app.get('/pwa-app/*', (req, res) => {
+    res.sendFile(__dirname + '/pwa-app/build/index.html')
+})
 
 app.listen(3001, () => console.log('Example app listening on port 3001!'))
