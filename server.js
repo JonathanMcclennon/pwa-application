@@ -37,7 +37,7 @@ app.get('/api/ppvs/:id', (req, res) => {
 
 app.get('/pwa-app', (req, res) => {
     if (process.env.HTTP2) {
-    const filename = '9ccd6684';
+    const filename = '3cadeec7';
     const js = fs.readFileSync(__dirname + '/pwa-app/build/static/js/main.'+filename+'.js')
     const css = fs.readFileSync(__dirname + '/pwa-app/build/static/css/main.58e36bd4.css');
     var stream = res.push('/static/js/main.'+filename+'.js', {
@@ -77,9 +77,8 @@ app.get('/pwa-app/*', (req, res) => {
 
 //const server = https.createServer(options, app);
 //server.listen(3001);
-//app.listen(3001, () =>console.log('Example app listening on port 3001!'))
-
-spdy
+app.listen(3001, () =>console.log('Example app listening on port 3001!'))
+/* spdy
     .createServer(options, app)
     .listen(port, (error) => {
         if (error) {
@@ -88,4 +87,4 @@ spdy
         } else {
             console.log('Listening on port: ' + port + '.')
         }
-    });
+    });*/
