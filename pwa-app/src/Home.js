@@ -13,7 +13,9 @@ class Home extends Component {
 
   async componentDidMount() {
     const results = await axios('//localhost:3001/api/ppvs');
+    const data = results.data.body
     this.setState({ results: results.data.body, isLoading: false })
+    axios(`//localhost:3001/api/ppvs/${data[0].id}`)
   }
 
   render() {
